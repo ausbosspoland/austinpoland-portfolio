@@ -1,9 +1,11 @@
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
+import Navbar from "./components/Nav";
+
 function App() {
   return (
-    <h2>Austin J. Poland ..  A Professional Portfolio</h2>
-  )
+    <Navbar />
+  );
 }
 
 export default App;
