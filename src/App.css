@@ -2,6 +2,8 @@
 
 :root {
   --black: #000000;
+  --sblue: #b0c4de;
+  --pdark: rgba(255, 255, 255, 0);
 }
 
 body {
@@ -49,7 +51,7 @@ body {
 
 /*---- NAV BAR LINKS ----*/
 nav a.nav-links {
-  font-weight: 500;
+  font-size: 1rem;
   letter-spacing: 0.275rem;
   cursor: pointer;
 }
@@ -61,7 +63,8 @@ nav ul li {
 .navbar-nav > li > a {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
-  color: var(--primary-black) !important;
+  color: var(--black) !important;
+  border-top: 0.1875rem solid var(--pdark);
 }
 
 .navbar-brand {
@@ -70,4 +73,12 @@ nav ul li {
   max-width: 17.25rem;
   padding:0 !important;
   height: 6rem !important;
+}
+
+.navbar-nav > li > a.active,  .navbar-nav > li > a.active:focus {
+  border-top: 0.1875rem solid var(--sblue);
+}
+
+.navbar-nav > li > a:hover {
+  border-top: 0.1875rem solid var(--sblue);
 }
