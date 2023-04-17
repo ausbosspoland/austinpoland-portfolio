@@ -4,10 +4,12 @@
   --black: #000000;
   --sblue: #b0c4de;
   --pdark: rgba(255, 255, 255, 0);
+  --purplestuff: rgb(128, 0, 128);
+  --pwhite: #ffffff;
 }
 
 body {
-  font-family: "PT Serif", sans-serif;
+font-family: "PT Serif", sans-serif;
 }
 
 .App {
@@ -38,6 +40,7 @@ body {
 
 .App-link {
   color: #61dafb;
+  color: #ffffff;
 }
 
 @keyframes App-logo-spin {
@@ -47,6 +50,12 @@ body {
   to {
     transform: rotate(360deg);
   }
+}
+
+.logo {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
 }
 
 /*---- NAV BAR LINKS ----*/
@@ -68,11 +77,13 @@ nav ul li {
 }
 
 .navbar-brand {
-  font-weight: 600;
-  font-size: xx-large;
+  font-weight: 900;
+  font-size: 1.625rem !important;
   max-width: 17.25rem;
   padding:0 !important;
   height: 6rem !important;
+  justify-content: baseline;
+  font-family: "PT Serif", sans-serif;
 }
 
 .navbar-nav > li > a.active,  .navbar-nav > li > a.active:focus {
@@ -85,16 +96,21 @@ nav ul li {
 
 /******************** Header section ***********************/
 
-.header-wraper {
+.header-wrapper {
   position: relative;
-  background: url(Desktop-background-portfolio.jpeg) no-repeat;
+  background: url(Newestportfoliobackground.jpg) no-repeat;
   background-size: cover;
   background-position: bottom;
-  height:95vh;
+  height:100vh;
 }
 
 .main-info {
   display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -103,5 +119,21 @@ nav ul li {
 }
 
 .main-info h1 {
-  color: yellow;
+  color:beige;
+}
+
+/*------------- Contact Me Button -------------*/
+.btn-contact-me {
+  border: .25rem solid var(--pwhite);
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--pwhite);
+  font-family: "PT Serif", sans-serif;
+}
+
+.contact-me-btn {
+  display: flex;
+  position: relative; top: 65%;
+  justify-content: center;
+  text-align: center;
 }
