@@ -4,7 +4,7 @@
   --black: #000000;
   --sblue: #b0c4de;
   --pdark: rgba(255, 255, 255, 0);
-  --purplestuff: rgb(128, 0, 128);
+  --purplestuff: rgb(100, 13, 100);
   --pwhite: #ffffff;
 }
 
@@ -136,4 +136,30 @@ nav ul li {
   position: relative; top: 65%;
   justify-content: center;
   text-align: center;
+}
+
+/******************* About myself section ****************************/
+.photo-wrapped {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  width: 23rem;
+  height: 24rem;
+  border-radius: 50%;
+  padding: .3rem;
+  border: .15rem solid var(--purplestuff);
+}
+
+.heading-aboutmyself {
+  color: var(--purplestuff);
+}
+
+@media(max-width: 468px) {
+  .profile-img {
+    width: 10rem;
+    height: 11rem;
+  }
 }
