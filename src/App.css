@@ -6,6 +6,9 @@
   --pdark: rgba(255, 255, 255, 0);
   --purplestuff: rgb(100, 13, 100);
   --pwhite: #ffffff;
+  --pblack: #000000;
+  --pred: rgb(255, 0, 0);
+  --pmagenta: rgb(225, 0, 255);
 }
 
 body {
@@ -36,6 +39,7 @@ font-family: "PT Serif", sans-serif;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  color: rgb(255, 0, 0);
 }
 
 .App-link {
@@ -162,4 +166,54 @@ nav ul li {
     width: 10rem;
     height: 11rem;
   }
+}
+
+/*------------------------ Portfolio section -----------------------*/
+.portfolio-wrapper {
+  background: var(--sblue);
+  padding: 3rem 0;
+}
+
+.portfolio-image {
+  width: 21rem;
+  height: 10.5rem;
+  border: 1px solid var(--purplestuff);
+  padding: 0 0.5rem;
+}
+
+.portfolio-image-box {
+  position: relative;
+  margin: 1rem;
+}
+
+/*-------------------- Overflow ----------------------*/
+.overflow {
+  position: absolute;
+    opacity: 0;
+    background: var(--pblack);
+    width: 21rem;
+    height: 10.5rem;
+    top: 0;
+  border: 1px solid var(--pmagenta);
+  cursor: pointer;
+}
+
+.portfolio-image-box:hover .overflow {
+  opacity: 60%;
+  transition: 0.3s ease-in-out;
+}
+
+/*--------------- Overflow box ----------------*/
+.portfolio-image-popupbox {
+  width: 45rem;
+  padding: 0 0.5rem;
+}
+
+.hyper-link {
+  cursor: pointer;
+  color: var(--purplestuff);
+}
+
+.hyper-link:hover {
+  color: var(--purplestuff);
 }
