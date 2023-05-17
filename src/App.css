@@ -9,10 +9,12 @@
   --pblack: #000000;
   --pred: rgb(255, 0, 0);
   --pmagenta: rgb(225, 0, 255);
+  --plightgrey: rgb(215, 215, 215);
+  --preggrey: rgb(61, 61, 61);
 }
 
 body {
-font-family: "PT Serif", sans-serif;
+font-family: "PT Serif", sans-serif !important;
 }
 
 .App {
@@ -39,7 +41,6 @@ font-family: "PT Serif", sans-serif;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  color: rgb(255, 0, 0);
 }
 
 .App-link {
@@ -216,4 +217,55 @@ nav ul li {
 
 .hyper-link:hover {
   color: var(--purplestuff);
+}
+
+/******************* Contacts *******************/
+
+.contacts {
+  background: var(--preggrey);
+  padding: 3rem 0;
+}
+
+.contacts h1 {
+  color: var(--purplestuff);
+  padding: 1.3rem 0;
+}
+
+.contacts p {
+  color: var(--pwhite);
+  font-size: 1.1rem;
+}
+
+/*-------------- Input ---------------*/
+.contacts input, .contacts textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: none;
+  resize: none;
+  border: 0;
+  border-bottom: 0.125rem solid var(--pwhite);
+  border-radius: 0;
+  color: var(--plightgrey);
+  outline: 0 !important;
+  box-shadow: none !important;
+  top: 0;
+}
+
+.contacts .container {
+  padding: 2.5rem 0;
+}
+
+.contacts input:focus, .contacts textarea:focus {
+  background: transparent;
+  color: var(--pblack);
+}
+
+.contacts textarea {
+  height: 7.55rem;
+  margin: 2rem 0;
+}
+
+.contact-btn {
+  margin: 1rem 0 0 0;
+  width: 100%;
 }
