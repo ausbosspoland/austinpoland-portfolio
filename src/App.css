@@ -4,7 +4,7 @@
   --black: #000000;
   --sblue: #b0c4de;
   --pdark: rgba(255, 255, 255, 0);
-  --purplestuff: rgb(100, 13, 100);
+  --purplestuff: rgba(136, 0, 136, 0.919);
   --pwhite: #ffffff;
   --pblack: #000000;
   --pred: rgb(255, 0, 0);
@@ -99,7 +99,7 @@ nav ul li {
   border-top: 0.1875rem solid var(--sblue);
 }
 
-/******************** Header section ***********************/
+/******************** Header Section ***********************/
 
 .header-wrapper {
   position: relative;
@@ -169,7 +169,7 @@ nav ul li {
   }
 }
 
-/*------------------------ Portfolio section -----------------------*/
+/*------------------------ Portfolio Section -----------------------*/
 .portfolio-wrapper {
   background: var(--sblue);
   padding: 3rem 0;
@@ -304,4 +304,26 @@ textarea.form-control {
   .contacts p {
     padding: 0 0.4rem;
   }
+}
+
+/*---------------- Footer Section -----------------*/
+.footer {
+  background: var(--sblue);
+  color: var(--pblack);
+  padding: 3rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--pblack);
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: var(--pmagenta);
+  cursor: pointer;
+}
+
+.footer p {
+  margin-bottom: 0;
 }
